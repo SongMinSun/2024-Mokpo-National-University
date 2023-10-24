@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/future"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="미래 라이프 대학"
+        android:fontFamily="@font/nanum"
+        android:gravity="center"
+        android:textColor="#5AB9B3"
+        android:textSize="45sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/future_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="평생교육에 특화된 미래라이프대학" />
+
+    <Switch
+        android:id="@+id/futureswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="자세히 보기"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/futurerg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/future1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="레저스포츠지도학과"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/future2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="상담심리치료학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/future3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="국제차문화학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/future4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="회계세무학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/future5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="스마트에너지학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/future6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="스마트조선시스템학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/future_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="학과소개"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/future_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="18sp"
+                android:fontFamily="@font/nanum"
+                android:visibility="invisible"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/future_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="전화번호 :  "
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/future_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/futureimg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/futurelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:textColor="@color/white"
+                android:text="해당학과 링크"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/futureback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:text="이전으로"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

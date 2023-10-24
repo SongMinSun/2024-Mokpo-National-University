@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="생명ㆍ의과학대학"
+        android:fontFamily="@font/nanum"
+        android:gravity="center"
+        android:textColor="#5AB9B3"
+        android:textSize="45sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/bio_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="시대가 요구하는 인력양성 국립목포대학교
+            생명의과학대학" />
+
+    <Switch
+        android:id="@+id/bioswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="자세히 보기"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/biorg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/bio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="식품‧제약공학부"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/bio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="원예산림학부"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/bio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="수산생명의학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/bio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="간호학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/bio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="학과소개"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/bio_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="18sp"
+                android:fontFamily="@font/nanum"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/bioimg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/bio_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="전화번호 :  "
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/bio_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/biolink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:textColor="@color/white"
+                android:text="해당학과 링크"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/bioback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:text="이전으로"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

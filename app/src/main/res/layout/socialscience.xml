@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사회과학대학"
+        android:fontFamily="@font/nanum"
+        android:gravity="center"
+        android:textColor="#5AB9B3"
+        android:textSize="45sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/social_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="사회가 필요로 하는 품성과 능력을 지닌 인재 양성,
+        소통과 협력을 통한 민주적 교육공동체 운영" />
+
+    <Switch
+        android:id="@+id/socialswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="자세히 보기"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/socialrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/social1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="법·경찰학부"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/social2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="행정·언론미디어학부"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/social3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="지적학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/social4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="사회복지학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/social5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="관광학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/social_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="학과소개"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/Socialscience_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="18sp"
+                android:fontFamily="@font/nanum"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/socialimg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/social_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="전화번호 :  "
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/social_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sociallink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:textColor="@color/white"
+                android:text="해당학과 링크"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/socialback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:text="이전으로"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

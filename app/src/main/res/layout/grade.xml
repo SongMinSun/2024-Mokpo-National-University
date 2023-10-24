@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mokpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/nanum"
+                android:text="목포대학교"
+                android:textColor="#5AB9B3"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_weight = "1"
+                android:id="@+id/mokpo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/nanum"
+                android:text="2024년도 학부"
+                android:textColor="#5AB9B3"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Humanities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="인문대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Socialscience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="사회과학대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="생명의과학대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Engineering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="공과대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="경영대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Humanecology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="생활과학예술체육대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="사범대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Pharmacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="약학대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Future"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="미래라이프대학"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/direct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5AB9B3"
+                android:fontFamily="@font/nanum"
+                android:gravity="center"
+                android:text="총장직속학부"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </TableRow>
+
+    </TableLayout>
+
+</TableLayout>

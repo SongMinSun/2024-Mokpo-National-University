@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/engineering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공과대학"
+        android:fontFamily="@font/nanum"
+        android:gravity="center"
+        android:textColor="#5AB9B3"
+        android:textSize="45sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/engineering_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="구성원의 자긍심이 넘치는 행복한 대학,
+                      국립목포대학교 공과대학" />
+
+    <Switch
+        android:id="@+id/engineeringswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="자세히 보기"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/engineeringrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/engineering1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="반도체공학과"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="기계조선해양공학부"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="전기공학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="인공지능공학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="컴퓨터학부"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="건축‧토목‧환경공학부"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="도시계획및조경학부"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="건축학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+
+                <RadioButton
+                    android:id="@+id/engineering9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="에너지화학공학과"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nanum" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/engineering_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="학과소개"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/Engineering_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="18sp"
+                android:fontFamily="@font/nanum"
+                android:visibility="invisible"/>
+
+
+            <ImageView
+                android:id="@+id/engineeringimg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/engineering_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="전화번호 :  "
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/engineering_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanum"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/engineeringlink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:textColor="@color/white"
+                android:text="해당학과 링크"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/engineeringback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#5AB9B3"
+                android:text="이전으로"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
